@@ -24,7 +24,7 @@ def download_jpg(image_url, image_localpath):
             response.raw.deconde_content = True
             shutil.copyfileobj(response.raw, f)
 
-#取得演讲图片
+#取得图片
 def craw3(url):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'lxml')
@@ -42,11 +42,3 @@ def craw3(url):
 
 
 craw3(url)
-
-# 翻页
-# page = 0
-# for i in range(12, 37, 12):
-#     url = 'http://www.infoq.com/cn/presentations' + str(i)
-#     page += 1
-#     print('第 %d 页' % page)
-#     craw3(url)
