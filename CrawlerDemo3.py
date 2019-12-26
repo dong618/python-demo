@@ -1,7 +1,5 @@
 from urllib import request, parse
 
-url = 'http://httpbin.org/post'
-
 '''
     说明: 
      headers中有"Accept-Encoding": "gzip, deflate, sdch", 时，运行报错
@@ -16,7 +14,7 @@ url = 'http://httpbin.org/post'
 
 '''
 
-
+url = 'http://httpbin.org/post'
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
     # "Accept-Encoding": "gzip, deflate, sdch",
